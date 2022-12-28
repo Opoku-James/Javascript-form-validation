@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-card{
+    width: 27%;
+    height: 500px;
+    display: flex;
+    justifyt-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  position: relative;
+}
+label{
+    display: block;
+    font-size: 13px;
+}
+input{
+    display: block;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    width: 100%;
+ 
+    border-radius: 4px;
+}
+input:focus{
+    outline: 1px solid lightgray;
+    border: none;
+}
+form{
+    width: 100%;
+    padding: 10px;
+}
+.form-card input~.small-msg{
+    font-size: 12px;
+    
+    positionr: absolute;
+    left: 0;
+    bottom:0;
+    visibility: hidden;
+   
+}
+button{
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #ff526c;
+    color: #ffff;
+    padding: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.input-card{
+    /* background-color: aqua; */
+    /* margin-bottom: 1%; */
+}
+.input-card.success input{
+    border-color: seagreen;
+}
+.input-card.error input{
+    border-color: tomato;
+}
+.input-card.error .small-msg{
+    color: tomato;
+    visibility: visible;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- INCLUED THESE LIBRARIES -->
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="form-card bg-white shadow-sm">
+        <h6>REGISTRATION FORM</h6>
+       
+        <form action="" method="post" id="userform">
+            <div class="input-card ">
+                <label for="">Username</label>
+                <input type="text" placeholder="Enter username" id="username" style="font-size: 13px;">
+                <div class="small-msg error"></div>
+            </div>
+            <div class="input-card ">
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter Email" id="email">
+                <div class="small-msg"></div>
+            </div>
+            <div class="input-card">
+                <label for="">Contact</label>
+                <input type="text" placeholder="Enter Contact" id="contact">
+                <div class="small-msg">message</div>
+            </div>
+            <div class="input-card">
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter Password" id="password">
+                <div class="small-msg">message</div>
+            </div>
+          
+            <div class="input-card">
+                <label for="">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="cpass">
+                <div class="small-msg">message</div>
+            </div>
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
